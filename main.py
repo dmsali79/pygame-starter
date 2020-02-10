@@ -15,7 +15,7 @@ while run:
   win.fill((0, 0, 0))
 
   # Draw a rectangle
-  pygame.draw.rect(win, (139, 149, 201), (50, 200, 300, 200))
+  pygame.draw.rect(win, (139, 149, 201), (50, 10, 120, 100))
   
   #Update the display
   pygame.display.update()
