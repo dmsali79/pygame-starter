@@ -1,4 +1,5 @@
-import pygame # import library
+import pygame  # import library
+
 pygame.init()
 
 # Create the window
@@ -14,7 +15,7 @@ while run:
   win.fill((0, 0, 0))
 
   # Draw a rectangle
-  pygame.draw.rect(win, (0, 204, 102), (50, 50, 100, 200))
+  pygame.draw.rect(win, (139, 149, 201), (50, 200, 300, 200))
   
   #Update the display
   pygame.display.update()
