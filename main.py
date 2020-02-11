@@ -4,7 +4,7 @@ pygame.init()
 
 # Create the window
 win = pygame.display.set_mode((800, 600))
-img = pygame.image.load('assets/forest-assets/door.png').convert()
+img = pygame.image.load('assets/forest-assets/stairs.png').convert()
 run = True
 while run:
   for event in pygame.event.get():
