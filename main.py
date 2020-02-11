@@ -27,9 +27,9 @@ while run:
 # Game code starts here ---------------------
   win.fill((0, 0, 0))
   
-  win.blit(text, (125, 1))
-  win.blit(btext, (100, 20))
-  win.blit(ctext, (75, 40))
+  win.blit(text, (100, 1))
+  win.blit(btext, (100, 40))
+  win.blit(ctext, (75, 75))
 
 
   win.blit(img, (400, 300))
