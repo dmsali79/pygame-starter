@@ -4,7 +4,7 @@ pygame.init()
 
 # Create the window
 win = pygame.display.set_mode((800, 600))
-
+img = pygame.image.load('assets/forest-assets/door.png').convert()
 run = True
 while run:
   for event in pygame.event.get():
@@ -14,8 +14,10 @@ while run:
 # Game code starts here ---------------------
   win.fill((0, 0, 0))
 
+
+  win.blit(img, (400, 300))
   # Draw a rectangle
-  pygame.draw.rect(win, (139, 149, 201), (50, 10, 120, 100))
+
   
   #Update the display
   pygame.display.update()
