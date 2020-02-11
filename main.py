@@ -15,8 +15,11 @@ btext = bfont.render("The Room.", True, (220, 80, 5))
 ctext = cfont.render("The Room.", True, (180, 60, 1))
 
 img = pygame.image.load('C:/Users/dmsali79/Downloads/dungeon_tiles.png').convert()
+bimg = pygame.image.load('assets/forest-assets/floor.png')
+cimg = pygame.image.load('assets/forest-assets/wall-e-1.png')
+dimg = pygame.image.load('assets/forest-assets/door.png')
+eimg = pygame.image.load('assets/forest-assets/stairs.png')
 
-img = pygame.image.load('assets/forest-assets/floor.png')
 
 run = True
 while run:
@@ -33,6 +36,12 @@ while run:
 
 
   win.blit(img, (400, 300))
+  win.blit(bimg, (200, 300))
+  win.blit(cimg, (300, 300))
+  win.blit(dimg, (300, 200))
+  win.blit(eimg, (300, 400))
+
+
   # Draw a rectangle
 
   
