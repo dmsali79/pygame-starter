@@ -19,7 +19,7 @@ bimg = pygame.image.load('assets/forest-assets/floor.png')
 cimg = pygame.image.load('assets/forest-assets/wall-e-1.png')
 dimg = pygame.image.load('assets/forest-assets/door.png')
 eimg = pygame.image.load('assets/forest-assets/stairs.png')
-
+fimg = pygame.image.load('assets/forest-assets/wall-e-2.png')
 
 run = True
 while run:
@@ -40,6 +40,8 @@ while run:
   win.blit(cimg, (300, 300))
   win.blit(dimg, (300, 200))
   win.blit(eimg, (300, 400))
+  win.blit(fimg, (300, 250))
+
 
 
   # Draw a rectangle
