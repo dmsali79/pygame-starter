@@ -10,6 +10,8 @@ font = pygame.font.SysFont("arial", 72)
 bfont = pygame.font.SysFont("arial", 52)
 cfont = pygame.font.SysFont("arial", 42)
 
+
+
 text = font.render("The Room...", True, (255, 100, 10))
 btext = bfont.render("The Room...", True, (175, 50, 5))
 ctext = cfont.render("The Room.", True, (40, 1, 1))
@@ -34,10 +36,10 @@ while run:
   win.blit(btext, (105, 60))
   win.blit(ctext, (110, 110))
 
-  win.blit(img, (460, 130))
-  win.blit(img, (20, 160))
-
-  win.blit(bimg, (200, 300))
+  win.blit(img, (365, 185))
+  win.blit(img, (60, 200))
+  
+  win.blit(bimg, (200, 350))
 
   win.blit(cimg, (300, 280))
   win.blit(cimg, (300, 305))
