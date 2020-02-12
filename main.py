@@ -10,8 +10,8 @@ font = pygame.font.SysFont("arial", 72)
 bfont = pygame.font.SysFont("arial", 52)
 cfont = pygame.font.SysFont("arial", 42)
 
-text = font.render("The Room.", True, (255, 100, 10))
-btext = bfont.render("The Room.", True, (175, 50, 5))
+text = font.render("The Room...", True, (255, 100, 10))
+btext = bfont.render("The Room...", True, (175, 50, 5))
 ctext = cfont.render("The Room.", True, (40, 1, 1))
 
 img = pygame.image.load('C:/Users/dmsali79/Downloads/dungeon_tiles.png').convert()
@@ -43,12 +43,12 @@ while run:
   win.fill((0, 0, 0))
   
   win.blit(text, (100, 1))
-  win.blit(btext, (100, 60))
-  win.blit(ctext, (75, 110))
+  win.blit(btext, (105, 60))
+  win.blit(ctext, (110, 110))
 
   win.blit(img, (400, 300))
   win.blit(bimg, (200, 300))
-  
+
   win.blit(cimg, (300, 230))
   win.blit(c1img, (300, 255))
   win.blit(c2img, (300, 270))
