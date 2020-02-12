@@ -28,32 +28,32 @@ while run:
       run = False
 
 # Game code starts here ---------------------
-  win.fill((0, 0, 0))
+  win.fill((158, 115, 55))
   
   win.blit(text, (100, 1))
   win.blit(btext, (105, 60))
   win.blit(ctext, (110, 110))
 
-  win.blit(img, (340, 100))
-  win.blit(img, (60, 100))
+  win.blit(img, (460, 130))
+  win.blit(img, (20, 160))
 
   win.blit(bimg, (200, 300))
 
-  win.blit(cimg, (300, 230))
-  win.blit(cimg, (300, 255))
-  win.blit(cimg, (300, 270))
-  win.blit(cimg, (300, 285))
-  win.blit(cimg, (300, 300))
-  win.blit(cimg, (300, 315))
-  win.blit(cimg, (300, 330))
-  win.blit(cimg, (300, 345))
-  win.blit(cimg, (300, 360))
-  win.blit(cimg, (300, 375))
-  win.blit(cimg, (300, 390))
+  win.blit(cimg, (300, 280))
+  win.blit(cimg, (300, 305))
+  win.blit(cimg, (300, 320))
+  win.blit(cimg, (300, 335))
+  win.blit(cimg, (300, 350))
+  win.blit(cimg, (300, 365))
+  win.blit(cimg, (300, 380))
+  win.blit(cimg, (300, 395))
+  win.blit(cimg, (300, 410))
+  win.blit(cimg, (300, 425))
+  win.blit(cimg, (300, 440))
   
-  win.blit(dimg, (300, 210))
-  win.blit(eimg, (300, 400))
-  win.blit(fimg, (300, 250))
+  win.blit(dimg, (300, 260))
+  win.blit(eimg, (300, 450))
+  win.blit(fimg, (300, 300))
 
 
 
