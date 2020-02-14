@@ -14,8 +14,8 @@ x = 200
 y = 200
 
 text = font.render("The Room...", True, (255, 100, 10))
-btext = bfont.render("The Room...", True, (175, 50, 5))
-ctext = cfont.render("The Room.", True, (40, 1, 1))
+btext = bfont.render("The Room...", True, (138, 64, 25))
+ctext = cfont.render("The Room.", True, (115, 64, 15))
 
 hero = pygame.image.load('assets/hero/sliced/idle-1.png')
 
@@ -92,7 +92,9 @@ while run:
     
   
     win.blit(hero, (x, y))
-
+  else:
+    hero = pygame.image.load('assets/hero/sliced/idle-1.png')
+    win.blit(hero,(x, y))
 
   if keys[pygame.K_RIGHT]:
     
