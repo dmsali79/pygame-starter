@@ -14,7 +14,7 @@ x = 200
 y = 200
 
 text = font.render("The Room...", True, (255, 100, 10))
-btext = bfont.render("The Room...", True, (138, 64, 25))
+btext = bfont.render("The Room...", True, (138, 68, 5))
 ctext = cfont.render("The Room.", True, (115, 64, 15))
 
 hero = pygame.image.load('assets/hero/sliced/idle-1.png')
@@ -44,7 +44,6 @@ while run:
   
   keys = pygame.key.get_pressed()
 
-  win.blit(hero,(x, y))
 
 
   win.blit(text, (100, 1))
@@ -77,14 +76,20 @@ while run:
   win.blit(dimg, (300, 260))
   win.blit(eimg, (300, 450))
   win.blit(fimg, (300, 300))
-
+  win.blit(hero,(x, y))
   
   keys = pygame.key.get_pressed()
 
-  win.blit(hero,(x, y))
-
-
  
+
+
+  
+
+
+
+
+
+
 
   if keys[pygame.K_LEFT]:
     hero = pygame.image.load('assets/hero/sliced/walk-4.png')
@@ -92,10 +97,9 @@ while run:
     
   
     win.blit(hero, (x, y))
-  else:
-    hero = pygame.image.load('assets/hero/sliced/idle-1.png')
-    win.blit(hero,(x, y))
+  
 
+ 
   if keys[pygame.K_RIGHT]:
     
     hero = pygame.image.load('assets/hero/sliced/swim-1.png')
@@ -116,7 +120,14 @@ while run:
     y +=0.2
     win.blit(hero, (x,y))
   
-
+  if x >790:
+    x = 790
+  if x <20:
+    x = 20
+  if y > 580:
+    y=580
+  if y < 1:
+    y = 1
   # Draw a rectangle
 
   
