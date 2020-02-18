@@ -123,15 +123,13 @@ while run:
     y +=0.2
     win.blit(hero, (x,y))
   
-  if x < 310:
-    win.blit(item, (360,360))
-  if x > 290
-    win.blit(item, (360,360))
+
 
 
 
   if x >790:
     x = 790
+    win.blit(hero,(200,200))
   if x <20:
     x = 20
   if y > 580:
