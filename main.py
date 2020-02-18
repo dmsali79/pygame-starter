@@ -20,7 +20,7 @@ ctext = cfont.render("The Room.", True, (115, 64, 15))
 hero = pygame.image.load('assets/hero/sliced/idle-1.png')
 
 
-
+item = pygame.image.load('assets/forest-assets/spooky_trees.png')
 img = pygame.image.load('assets/forest-assets/spooky_trees.png')
 bimg = pygame.image.load('assets/forest-assets/floor.png')
 cimg = pygame.image.load('assets/forest-assets/wall-e-1.png')
@@ -76,7 +76,10 @@ while run:
   win.blit(dimg, (300, 260))
   win.blit(eimg, (300, 450))
   win.blit(fimg, (300, 300))
+
+
   win.blit(hero,(x, y))
+
   
   keys = pygame.key.get_pressed()
 
@@ -120,14 +123,21 @@ while run:
     y +=0.2
     win.blit(hero, (x,y))
   
+  if x < 310:
+    win.blit(item, (360,360))
+  if x > 290
+    win.blit(item, (360,360))
+
+
+
   if x >790:
     x = 790
   if x <20:
     x = 20
   if y > 580:
     y=580
-  if y < 1:
-    y = 1
+  if y < 150:
+    y = 150
   # Draw a rectangle
 
   
