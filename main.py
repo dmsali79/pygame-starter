@@ -3,7 +3,13 @@ import pygame  # import library
 pygame.init()
 
 # Create the window
+
 win = pygame.display.set_mode((800, 600))
+
+img = pygame.image.load('assets/gfx/Inner.png')
+smol_img = pygame.Surface([16, 16]).convert()
+smol_img.blit(img,(0,0) (0, 0, 16, 16))
+smol_img = pygame.transform.scale(smol_img, (0, 60))
 
 # Create the font
 font = pygame.font.SysFont("arial", 72)
@@ -41,11 +47,12 @@ while run:
   
   
   win.fill((158, 115, 55))
-  
+  win.blit(smol_img,  (0, 0))
+  win.blit(smol_img, (40, 0) )
+   
   keys = pygame.key.get_pressed()
 
-
-
+  
   win.blit(text, (100, 1))
   win.blit(btext, (105, 60))
   win.blit(ctext, (110, 110))
