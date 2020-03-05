@@ -6,10 +6,7 @@ pygame.init()
 
 win = pygame.display.set_mode((800, 600))
 
-img = pygame.image.load('assets/gfx/Inner.png')
-smol_img = pygame.Surface([16, 16]).convert()
-smol_img.blit(img, (0,0) (0, 0, 16, 16))
-smol_img = pygame.transform.scale(smol_img, (0, 0))
+
 
 # Create the font
 font = pygame.font.SysFont("arial", 72)
@@ -29,7 +26,11 @@ hero = pygame.image.load('assets/hero/sliced/idle-1.png')
 
 item = pygame.image.load('assets/forest-assets/spooky_trees.png')
 img = pygame.image.load('assets/forest-assets/spooky_trees.png')
+
+
 bimg = pygame.image.load('assets/forest-assets/floor.png')
+
+
 cimg = pygame.image.load('assets/forest-assets/wall-e-1.png')
 dimg = pygame.image.load('assets/forest-assets/door.png')
 eimg = pygame.image.load('assets/forest-assets/stairs.png')
@@ -48,11 +49,8 @@ while run:
   
   
   win.fill((158, 115, 55))
-  
-  for j in range(4):
-    for k in range(4): 
-      win.blit(smol_img,  (k*64, 0))
-      win.blit(smol_img, (k*64, 0) )
+  win.fill((100,100,100))
+
    
   keys = pygame.key.get_pressed()
 
@@ -64,9 +62,8 @@ while run:
   win.blit(img, (365, 185))
   win.blit(img, (60, 200))
   
-  win.blit(bimg, (200, 350))
-  
-    
+
+
   
 
   win.blit(cimg, (300, 280))
@@ -87,7 +84,19 @@ while run:
   win.blit(dimg, (300, 260))
   win.blit(eimg, (300, 450))
   win.blit(fimg, (300, 300))
+   
 
+
+   
+  
+  row = [1, 0, 0, 1]
+
+  for i in range(4):
+    if row[i] == 1:
+      win.blit(bimg, (i,0))
+    if row[i]==0:
+      win.blit (bimg, (i,0))
+  
 
   win.blit(hero,(x, y))
 
