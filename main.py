@@ -30,6 +30,7 @@ img = pygame.image.load('assets/forest-assets/spooky_trees.png')
 
 bimg = pygame.image.load('assets/forest-assets/floor.png')
 
+road = pygame.image.load('assets/forest-assets/wall-e-1.png')
 
 cimg = pygame.image.load('assets/forest-assets/wall-e-1.png')
 dimg = pygame.image.load('assets/forest-assets/door.png')
@@ -94,6 +95,10 @@ while run:
   for i in range(20):
      for j in range(40):
         win.blit (fimg, (i*1, j*15))
+
+  for i in range(14):
+    for j in range (11):
+        win.blit (road, (i*50, j*15))       
 
   
 
