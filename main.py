@@ -87,7 +87,7 @@ while run:
    
 
 
-  for i in range(55):
+  for i in range(40):
     for j in range(40):
       win.blit (bimg, (i*15,j*15))
   
@@ -131,8 +131,7 @@ while run:
 
         win.blit(dimg, (300, 260))
         win.blit(eimg, (300, 450))
-        win.blit(fimg, (300, 300))
-   
+        
 
   
 
